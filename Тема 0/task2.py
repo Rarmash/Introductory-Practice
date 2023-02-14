@@ -10,9 +10,8 @@ def func2(list1):
     for i in range(1, len(list1)//2+1):
         if list1[i - 1] < 0 and x1 is None:
             x1 = i - 1
-        if list1[-1] < 0 and x2 is None:
+        if list1[-1-i] < 0 and x2 is None:
             x2 = i
-    l = list1[x1+1:x2]
-    return sum(list1[3:-2])
+    return sum(list1[x1+1:-1-x2])
 
 print(func2(list1))
