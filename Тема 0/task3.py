@@ -8,7 +8,7 @@ def func3(list2):
     c = 1
     maxx = 0
     for i in range(1, len(list2)):
-        if list2[i-1] <= list2[i]:
+        if list2[i-1] < list2[i]:
             c += 1
         else:
             maxx = c
