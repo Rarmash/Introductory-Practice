@@ -15,9 +15,7 @@ def func3(list2):
             c += 1
             a.append(list2[i])
         else:
-            c = 1
-            maxa = a
-            a = []
+            c, maxa, a = 1, a, []
     return f'{maxa}'
 
 print(func3(list2))
