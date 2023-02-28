@@ -10,8 +10,6 @@
 # – удалении фильма по номеру.
 # Провести тестирование функций.
 
-import traceback
-
 def all_films(films):
     for film in films:
         print(f'{film[u"id"]}: {film[u"title"]} ({film[u"year"]}). Жанры: {film[u"genre"]}. Страны: {film[u"country"]}')
